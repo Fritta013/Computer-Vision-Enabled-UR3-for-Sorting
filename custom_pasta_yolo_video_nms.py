@@ -41,7 +41,7 @@ while (file_video_stream.isOpened):
     # Loading pretrained model 
     # input preprocessed blob into model and pass through the model
     # obtain the detection predictions by the model using forward() method
-    yolo_model = cv2.dnn.readNetFromDarknet('model/yolov3.cfg','model/yolov3.weights')
+    yolo_model = cv2.dnn.readNetFromDarknet('model/pasta_yolov4.cfg','model/pasta_yolov4_best.weights')
     
     # Get all layers from the yolo network
     # Loop and find the last layer (output layer) of the yolo network 
